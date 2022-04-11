@@ -1,19 +1,13 @@
-/*let numeroDeReserva = preseInt(prompt("Ingrese cantidad de noches para su reserva"));
-let disponibilidad = 45;
-let diasReservados = 0;
-let cantidadDePersonas = "";
+let nombre = prompt("Holaa, como es tu nombre?");
 
-for (let i = 0; i < numeroDeReserva; i++) {
-    cantidadDePersonas = prompt("Cuantas personas son?(Dos o Cuatro)");
-    diasReservados = parseInt(prompt("Cuantas noches queres reservar?"))
+let edad = parseInt(prompt("Hola " + nombre + " Cuantos años tienes?"));
 
-    if (cantidadDePersonas.toUpperCase() === "Dos") {
-        disponibilidad = disponibilidad - diasReservados;
-    } else if (cantidadDePersonas.toUpperCase() === "Cuatro" && disponibilidad > diasReservados) {
-        disponibilidad = disponibilidad - diasReservados;
-    } else {
-        alert("No hay dias disponibles");
-    }
+if (edad < 18) {
+    alert("Este sitio solo acepta mayores de edad.");
 
+} else if (edad >= 18 && edad <= 100) {
+    alert("Ya estas a un paso de tus Vacaciones!!!");
+
+} else {
+    alert("Por favor indicanos tu edad para continuar tu reserva.");
 }
-alert(`La reserva fue generada con exito. Tenemos ${disponibilidad} noches mas para vos`);*/
