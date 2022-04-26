@@ -92,3 +92,39 @@ if (reserva == "A") {
 } else {
     alert("La opcion es incorrecta")
 }
+
+const extras = [
+    { extras: "sombrilla", precio: 2000 },
+    { extras: "reposera", precio: 1000 },
+    { extras: "heladerita", precio: 3000 },
+];
+const carrito = [];
+
+let misExtras;
+let finalizacion;
+
+do {
+
+    misExtras = prompt("Tenemos para alquilar sombrilla, reposera y heladerita. Ingrese un pedido o ingrese finalizar pedido ");
+
+    const seleccionExtras = extras.find(extras => extras.extras === misExtras);
+
+    carrito.push(seleccionExtras);
+
+    finalizacion = prompt('1. Termina pedido \n2.Sigue haciendo pedidos')
+
+} while (finalizacion !== "1");
+
+console.log(carrito);
+
+
+const total = (array) => {
+    return array.reduce((acc, el) => acc + el.precio, 0)
+};
+
+const lista = (array) => {
+    return array.map((data) => `${data.extras} : $${data.precio}.\n`)
+
+}
+
+alert(`su cuenta es un total de $${total(carrito)} \n\n Carrito:\n\n${lista(carrito)}`);
