@@ -4,19 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <!--<script src="JS/primerScript.js"></script>
-    <script src="JS/clase4.js"></script>
-    <script src="JS/ciclo.js"></script> --->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Monte Hermoso, playa, cabañas, alquiler, hotel, posada, Sauce Grande">
+    <meta name="Descripcion" content="Complejo de El Refugio, alquiler de cabañas a 3 cuadras de la playa. Ubicadas en Monte Hermoso, Balneario Sauce Grande">
+    <title>El Refugio</title>
+    <script src="js/dom.js" async></script>
 
-    <script src="JS/varycons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family = Markazi + Text: wght @ 600 & display = swap " rel=" stylesheet ">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/9d8b78d3fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+
 </head>
 
-<body>
-    <script>
-        console.log("hola estoy escribiendo en la consola")
+<body class="fondo">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light navbar-main">
+        <a href="#" class="navbar-brand">
+            <img src="./media/logoelrefugio2.png" alt="Logo">
+        </a>
+        <div class="container"> <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="flase" aria-label="Barra de navegación">
+            </button>
+            <span class="navbar-toggle-icon"></span>
+
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="nav ms-auto text-dark">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="/paginas/cabanias.html" class="nav-link">Cabañas</a>
+                    <a href="/paginas/reserva.html" class="nav-link">Reservas</a>
+                    <a href="/paginas/ubicacion.html" class="nav-link">Ubicación</a>
+                    <a href="/paginas/contacto.html" class="nav-link">Contacto</a>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="container">
+        <header class="row">
+            <div class="col-md-7 ">
+                <h1 class="displey-2 colortexto">
+                    <span class="d-block"> El Refugio,</span> te esperamos.
+                </h1>
+                <p class="text-muted fw-light text-capitalize">
+                    Sauce Grande
+                </p>
+                <div class="d-none d-md-block icons-social-networks">
+                    <a href="#" class="fa fa-facebook bg-facebook mx-3"></a>
+                    <a href="#" class="fa fa-instagram bg-instagram"></a>
+                </div>
+            </div>
+            <div class="col-8 col-md-4 ">
+                <img src="/media/principal.jpg.jpeg" alt="" class="w-100 ">
+            </div>
+            <div class="col-md-4"></div>
+
+        </header>
+    </div>
+
+    <hr/>
+
+    <div class="conteiner tarjeta row justify-content-around text-center">
+        <h2 class="col-12 display-4 text-capitalize mb-3 colortexto">
+            Conocenos...
+        </h2>
+        <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light card">
+            <img src="/media/dibujocabaña.webp" alt="Cabaña" class="bg-gradient d-inline-bloc rounded-circle mb-3 icon-service">
+            <h3 class="text-capitalize">
+                Cabañas
+            </h3>
+            <p class="text-muted">Conoce nuestras cabañas, interior y exterior con todas las comodidades.</p>
+            <a href="/paginas/cabanias.html" class="btn btn-outline-primary">Ver mas...</a>
+        </article>
+        <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light card">
+            <img src="/media/dibujoreserva.jpg" alt="Reserva" class=" bg-gradient d-inline-bloc rounded-circle mb-3 icon-service">
+            <h3 class="text-capitalize">
+                Reservas
+            </h3>
+            <p class="text-muted">Consultá disponibilidad en en el més y fecha que desees.</p>
+            <a href="/paginas/reserva.html" class="btn btn-outline-primary">Ver mas...</a>
+        </article>
+        <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light card">
+            <img src="/media/dibujoubicacion.jpg" alt="Ubicación" class="bg-gradient d-inline-bloc rounded-circle mb-3 icon-service">
+            <h3 class="text-capitalize">
+                Ubicación
+            </h3>
+            <p class="text-muted">Encontrá como llegar a nuestras cabañas.</p>
+            <a href="/paginas/ubicacion.html" class="btn btn-outline-primary">Ver mas...</a>
+        </article>
+
+
+    </div>
+
+
+    <a href="https://api.whatsapp.com/send?phone=Tu-n%C3%B9mero-aqu%C3%AD" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <div class="contenerdor-tienda" id="contenedorTienda">
+
+    </div>
+
+    <div class="carrito" id="contenedorCarrito">
+
+    </div>
+
+    <button id="btnCarrito">ver carrito</button>
+
+    <section name="" id="eliminarExtras"></section>
+
+    <button id="btnEliminarProd">Eliminar producto</button>
+
+    <footer class="pie-pagina bg-purple text-center p-4">
+        <div class="pie-pagina grupo-1">
+            <div class="box">
+                <H2 class="colortexto">SIGUENOS</H2>
+                <div class="redsocial">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        </div>
+        <div class="grupo-2">
+            <small class="grupo-2"> &copy; 2021 <b>El Refugio</b> - Eugenia; All rights reserved. </small>
+        </div>
+
+    </footer>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.js">
     </script>
+
 </body>
 
 </html>
